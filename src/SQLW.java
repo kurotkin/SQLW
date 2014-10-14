@@ -1,3 +1,7 @@
+import java.awt.GridBagLayout;
+
+import javax.swing.JFrame;
+
 
 public class SQLW {
 
@@ -12,6 +16,13 @@ public class SQLW {
 		System.out.println(ans);
 		
 		ans = MyW.Writer("TestS2", 10);
+		
+		
+		JFrame frame = new JFrame("Запись в базу");
+		frame.setSize(600,500);
+		frame.setLayout(new GridBagLayout());
+		
+		frame.setVisible(true);
 		
 	}
 
